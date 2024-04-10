@@ -1,0 +1,123 @@
+<html>
+<head>
+  <title>Employer Profile Edit</title>
+<style>
+body
+{
+	background-image:url("2.jpg");
+	background-position:center;
+	background-size:cover;
+	font-family:"Trebuchet MS";
+}
+#but{
+	height:7.5%;
+	width:9%;
+}
+#but{
+	color:white;
+	background-color:rgb(0,0,0,0.3);
+	border-style:groove;
+	border-radius:25%;
+	border:none;
+border-radius: 50px;
+	outline:none;
+}
+#but:hover{
+	background-color:rgb(255,255,255,0.2);
+	color:black;
+	border-radius:50%;
+}
+div{
+	padding-left:5%;
+	padding-top:1%;
+
+}
+.group1        {
+  padding-left:13%;
+  padding-top:0.5%;
+}
+.group2        {
+  padding-left:5%;
+  padding-top:0.5%;
+}
+input         {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display: block;
+  	background-color:rgb(0,0,0,0.3);
+  width:300px;
+  color:black;
+  border-radius:50px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus{
+
+   outline:none;
+ }
+ label          {
+  color:white;
+  font-size:18px;
+  font-weight:normal;
+  position:relative;
+  pointer-events:none;
+  left:15px;
+  top:-25px;
+  transition:0.2s ease all;
+}
+input:focus ~ label, input:valid ~ label     {
+  top:-20px;
+  font-size:0px;
+    color:black;
+}
+</style>
+</head>
+<body background="img2.jpg">
+<b><font size=80px>Employer Profile Edit</font></b>
+<br>
+<br>
+<form action="empreg.php" method="POST">
+  <div>
+  <div class="group2">
+    <input type="text" name="cname" required>
+    <span class="highlight"></span>
+    <span class="bar"></span>
+    <label>Company Name</label>
+  </div>
+  <div class="group2">
+    <input type="text" name="rname" required>
+    <span class="highlight"></span>
+    <span class="bar"></span>
+    <label>Representative Name</label>
+  </div>
+  <div class="group2">
+    <input type="text" name="mail" required>
+    <span class="highlight"></span>
+    <span class="bar"></span>
+    <label>Email ID</label>
+  </div>
+  <div class="group2">
+    <input type="text" name="phone" required>
+    <span class="highlight"></span>
+    <span class="bar"></span>
+    <label>Phone Number</label>
+  </div>
+  <div class="group2">
+    <input type="text" name="positi" required>
+    <span class="highlight"></span>
+    <span class="bar"></span>
+    <label>Post in Company</label>
+  </div>
+  <div class="group2">
+    <input type="password" name="pword" required>
+    <span class="highlight"></span>
+    <span class="bar"></span>
+    <label>Password</label>
+  </div>
+  <div class="group1">
+  <p><button id='but'>SUBMIT</button></p>
+  </div>
+</div>
+</form>
+</body>
+</html>
